@@ -1,0 +1,42 @@
+{
+  "name": "node-ts-starter",
+  "version": "0.0.1",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run test && npm run tsc",
+    "tsc": "rm -rf lib/ && tsc",
+    "tsc:watch": "tsc -w",
+    "lint": "eslint src/ --fix --ext .ts,.tsx",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PengJiyuan/node-ts-starter.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "PengJiyuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PengJiyuan/node-ts-starter/issues"
+  },
+  "homepage": "https://github.com/PengJiyuan/node-ts-starter#readme",
+  "peerDependencies": {
+    "typescript": ">= 4.3.x"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^15.12.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.5"
+  },
+  "files": [
+    "lib"
+  ]
+}
